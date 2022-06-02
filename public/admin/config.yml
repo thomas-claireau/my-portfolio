@@ -21,5 +21,25 @@ collections:
               - { label: "Titre", name: "titre", widget: "string" }
               - { label: "URL", name: "url", widget: "string" }
               - { label: "Logo", name: "logo", widget: "image" }
+      - label: "About"
+        name: "about"
+        file: "content/pages/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Presentation", name: "presentation", widget: "markdown" }
+  - name: "global"
+    label: "Global"
+    files:
+      - label: "Menu"
+        name: "menu"
+        file: "content/global/menu.md"
+        fields:
+          - label: "Items"
+            name: "items"
+            widget: "relation"
+            collection: "pages"
+            value_field: "{{slug}}"
+            search_fields: ["title"]
+            multiple: true
 publish_mode: editorial_workflow
 local_backend: true

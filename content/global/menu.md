@@ -1,0 +1,5 @@
+---
+items:
+  - home
+  - about
+---
