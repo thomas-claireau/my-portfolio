@@ -1,21 +1,11 @@
-import { useRouter } from 'next/router';
 import {
   createContext, useContext, useEffect, useState,
 } from 'react';
 
-import en from './locales/en';
-import fr from './locales/fr';
-
 const AppContext = createContext();
 
 function AppContextProvider({ children }) {
-  const router = useRouter();
-  const { locale } = router;
   const [state, setState] = useState([]);
-
-  useEffect(() => setState({
-    i18n: locale === 'fr' ? fr : en,
-  }), [locale]);
 
   useEffect(() => {
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
