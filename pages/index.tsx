@@ -1,10 +1,6 @@
-import { useAppContext } from '../AppContext';
-
-import { attributes, react as HomeContent } from '../content/home.md';
+import { attributes } from '../content/home.md';
 
 export default function Home() {
-  const { i18n } = useAppContext();
-
   const { title } = attributes;
 
   return (
