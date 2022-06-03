@@ -17,7 +17,7 @@ export default function Layout({ children }) {
   }, [menuOpen]);
 
   return (
-    <div className="w-screen h-screen pt-24 dark:bg-dark-100 dark:text-gray-300 text-dark-800 transition ease-in-out duration-300">
+    <div className="w-screen h-screen pt-24 dark:bg-dark-100 dark:text-gray-300 text-dark-800">
       <Header />
       <div className={`${isBlur}`}>
         {children}
