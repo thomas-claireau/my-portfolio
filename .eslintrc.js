@@ -42,5 +42,6 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'react/no-array-index-key': 'off',
     'no-unused-vars': 'off',
+    'max-len': 'off',
   },
 };
