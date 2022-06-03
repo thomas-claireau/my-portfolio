@@ -5,7 +5,7 @@ export default function Menu() {
   const { items } = attributes;
 
   return (
-    <nav className="flex justify-between gap-2">
+    <nav className="flex justify-between gap-6">
       {items.map((item, index) => (
         <Link key={index} href={item.url}>
           {item.title}
