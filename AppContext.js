@@ -18,7 +18,7 @@ function AppContextProvider({ children }) {
       }
     }
 
-    setState((prevState) => ({ ...prevState, theme }));
+    setState((prevState) => ({ ...prevState, menuOpen: false, theme }));
   }, []);
 
   useEffect(() => {

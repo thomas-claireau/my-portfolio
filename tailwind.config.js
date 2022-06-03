@@ -23,6 +23,7 @@ module.exports = {
       },
       blue: '#2d96bd',
       white: '#fff',
+      transparent: 'transparent',
     },
     borderColor: (theme) => ({
       DEFAULT: theme('colors.gray.100', 'currentColor'),

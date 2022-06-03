@@ -1,12 +1,14 @@
-import { AppContextProvider } from '@/AppContext';
+import { AppContextProvider, useAppContext } from '@/AppContext';
 import '@/styles/globals.css';
+import Header from '@/components/Header';
+import Layout from '@/components/Layout';
 
 function MyApp({ Component, pageProps }) {
   return (
     <AppContextProvider>
-      <div className="dark:bg-dark-100 dark:text-gray-300 text-dark-800">
+      <Layout>
         <Component {...pageProps} />
-      </div>
+      </Layout>
     </AppContextProvider>
   );
 }
