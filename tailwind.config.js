@@ -17,7 +17,10 @@ module.exports = {
         800: '#161209',
       },
       light: '#f6f6f4',
-      gray: '#a8a8b2',
+      gray: {
+        100: '#f8f8f8',
+        300: '#a8a8b2',
+      },
       blue: '#2d96bd',
       white: '#fff',
     },
