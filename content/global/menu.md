@@ -1,5 +1,9 @@
 ---
 items:
-  - home
-  - about
+  - title: About
+    url: /about
+  - title: Blog
+    url: /blog
+  - title: Resume
+    url: /resume
 ---

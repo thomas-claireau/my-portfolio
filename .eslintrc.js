@@ -40,5 +40,7 @@ module.exports = {
     'react/button-has-type': 'off',
     'react/require-default-props': 'off',
     'import/prefer-default-export': 'off',
+    'react/no-array-index-key': 'off',
+    'no-unused-vars': 'off',
   },
 };

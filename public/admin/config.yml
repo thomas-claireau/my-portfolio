@@ -7,12 +7,12 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - label: "Home"
-        name: "home"
+      - label: "Accueil"
+        name: "accueil"
         file: "content/pages/home.md"
         fields:
           - { label: "Avatar", name: "avatar", widget: "image" }
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Url", name: "url", widget: "hidden", default: "all" }
           - { label: "Description", name: "description", widget: "string" }
           - label: "Social Network"
             name: "socialNetwork"
@@ -21,10 +21,11 @@ collections:
               - { label: "Titre", name: "titre", widget: "string" }
               - { label: "URL", name: "url", widget: "string" }
               - { label: "Logo", name: "logo", widget: "image" }
-      - label: "About"
-        name: "about"
+      - label: "À propos"
+        name: "à propos"
         file: "content/pages/about.md"
         fields:
+          - { label: "Url", name: "url", widget: "hidden", default: "/about" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Presentation", name: "presentation", widget: "markdown" }
   - name: "global"
@@ -36,10 +37,9 @@ collections:
         fields:
           - label: "Items"
             name: "items"
-            widget: "relation"
-            collection: "pages"
-            value_field: "{{slug}}"
-            search_fields: ["title"]
-            multiple: true
+            widget: "list"
+            fields:
+              - { name: title, label: "Titre", widget: "string" }
+              - { name: url, label: "URL", widget: "string" }
 publish_mode: editorial_workflow
 local_backend: true

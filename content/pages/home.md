@@ -1,6 +1,5 @@
 ---
 avatar: img/tech_thomas_claireau_1.jpg
-title: Thomas Claireau
 description: Développeur web frontend React.js / Next.js ⚡️
 socialNetwork:
   - titre: GitHub Profile

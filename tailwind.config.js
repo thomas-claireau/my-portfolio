@@ -11,13 +11,15 @@ module.exports = {
       },
     },
     colors: {
-      dark: '#282a37',
-      light: '#f6f6f4',
-      gray: {
-        100: '#e1e1e1',
-        300: '#B2B2B2',
-        600: '#545454',
+      dark: {
+        100: '#292a2d',
+        600: '#252627',
+        800: '#161209',
       },
+      light: '#f6f6f4',
+      gray: '#a8a8b2',
+      blue: '#2d96bd',
+      white: '#fff',
     },
     borderColor: (theme) => ({
       DEFAULT: theme('colors.gray.100', 'currentColor'),

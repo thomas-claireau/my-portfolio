@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "commit": "cz",
+    "admin": "npx netlify-cms-proxy-server",
     "export": "npm run build && next export"
   },
   "config": {
