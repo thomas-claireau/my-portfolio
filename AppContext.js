@@ -8,17 +8,34 @@ function AppContextProvider({ children }) {
   const [state, setState] = useState([]);
 
   useEffect(() => {
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-      setState((prevState) => ({ ...prevState, theme: 'dark' }));
-    } else {
-      document.documentElement.classList.remove('dark');
-      setState((prevState) => ({ ...prevState, theme: 'light' }));
+    let { theme } = localStorage;
+
+    if (!theme) {
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        theme = 'dark';
+      } else {
+        theme = 'light';
+      }
     }
+
+    setState((prevState) => ({ ...prevState, theme }));
   }, []);
 
+  useEffect(() => {
+    if (state.theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    localStorage.setItem('theme', state.theme);
+  }, [state.theme]);
+
+  // eslint-disable-next-line react/jsx-no-constructed-context-values
+  const value = { state, setState };
+
   return (
-    <AppContext.Provider value={state}>
+    <AppContext.Provider value={value}>
       {children}
     </AppContext.Provider>
   );

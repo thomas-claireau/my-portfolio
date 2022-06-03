@@ -1,12 +1,18 @@
 import Link from '@/components/Link';
-import { useEffect, useState } from 'react';
+import { useAppContext } from 'AppContext';
 import SwitchThemeSvg from './ui/SwitchThemeSvg';
 
+type State = {
+  theme: string;
+}
+
 export default function SwitchTheme() {
+  const { setState } = useAppContext();
+
   const handleTheme = (e: Event) => {
     e.preventDefault();
 
-    console.log(e);
+    setState((prevState: State) => ({ ...prevState, theme: prevState.theme === 'light' ? 'dark' : 'light' }));
   };
 
   return (
