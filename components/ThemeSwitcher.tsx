@@ -16,7 +16,7 @@ export default function ThemeSwitcher() {
   };
 
   return (
-    <Link className="w-[1.2rem] h-100 -rotate-45" onClick={handleTheme}>
+    <Link className="min-w-[1.2rem] h-100 -rotate-45" onClick={handleTheme}>
       <ThemeSwitcherSvg />
     </Link>
   );

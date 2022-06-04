@@ -1,6 +1,7 @@
 import Link from '@/components/Link';
 import BurgerMenuSvg from '@/components/ui/BurgerMenuSvg';
 import { useAppContext } from 'AppContext';
+import LanguageSwitcher from './LanguageSwitcher';
 import Menu from './Menu';
 import ThemeSwitcher from './ThemeSwitcher';
 
@@ -22,6 +23,7 @@ export default function Header() {
       <div className={`${visibility} p-4 gap-4 items-center text-center flex-col fixed w-full h-fit left-0 top-16 dark:bg-dark-600 bg-white sm:p-0 sm:!flex sm:justify-between sm:relative sm:w-auto sm:h-auto sm:top-0 sm:flex-row sm:bg-transparent`}>
         <Menu />
         <span className="w-0.5 h-2/3 dark:bg-gray bg-dark-600" />
+        <LanguageSwitcher />
         <ThemeSwitcher />
       </div>
     </header>
