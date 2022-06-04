@@ -1,8 +1,9 @@
 backend:
   name: github
   repo: thomas-claireau/my-portfolio
-base_url: https://my-portfolio-kappa-gray.vercel.app
-auth_endpoint: /api/auth
+  branch: master
+  base_url: https://my-portfolio-kappa-gray.vercel.app
+  auth_endpoint: /api/auth
 media_folder: public/img
 public_folder: img
 i18n:
