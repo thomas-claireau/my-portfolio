@@ -3,20 +3,31 @@ backend:
   branch: master # Branch to update (optional; defaults to master)
 media_folder: public/img
 public_folder: img
+i18n:
+  structure: single_file
+  locales: [en, fr]
 collections:
   - name: "pages"
     label: "Pages"
+    i18n: true
     files:
       - label: "Accueil"
         name: "accueil"
         file: "content/pages/home.md"
+        i18n: true
         fields:
           - { label: "Avatar", name: "avatar", widget: "image" }
-          - { label: "Url", name: "url", widget: "hidden", default: "all" }
-          - { label: "Description", name: "description", widget: "string" }
+          - { label: "Titre", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Description",
+              name: "description",
+              widget: "string",
+              i18n: true,
+            }
           - label: "Social Network"
             name: "socialNetwork"
             widget: "list"
+            i18n: true
             fields:
               - { label: "Titre", name: "titre", widget: "string" }
               - { label: "URL", name: "url", widget: "string" }
@@ -24,22 +35,30 @@ collections:
       - label: "À propos"
         name: "à propos"
         file: "content/pages/about.md"
+        i18n: true
         fields:
-          - { label: "Url", name: "url", widget: "hidden", default: "/about" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Presentation", name: "presentation", widget: "markdown" }
+          - { label: "Title", name: "title", widget: "string", i18n: true }
+          - {
+              label: "Presentation",
+              name: "presentation",
+              widget: "markdown",
+              i18n: true,
+            }
   - name: "global"
     label: "Global"
+    i18n: true
     files:
       - label: "Menu"
         name: "menu"
         file: "content/global/menu.md"
+        i18n: true
         fields:
           - label: "Items"
             name: "items"
             widget: "list"
+            i18n: true
             fields:
-              - { name: title, label: "Titre", widget: "string" }
-              - { name: url, label: "URL", widget: "string" }
+              - { name: title, label: "Titre", widget: "string", i18n: true }
+              - { name: url, label: "URL", widget: "string", i18n: true }
 publish_mode: editorial_workflow
 local_backend: true
