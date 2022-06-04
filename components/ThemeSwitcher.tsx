@@ -1,12 +1,12 @@
 import Link from '@/components/Link';
 import { useAppContext } from 'AppContext';
-import SwitchThemeSvg from './ui/SwitchThemeSvg';
+import ThemeSwitcherSvg from './ui/ThemeSwitcherSvg';
 
 type State = {
   theme: string;
 }
 
-export default function SwitchTheme() {
+export default function ThemeSwitcher() {
   const { setState } = useAppContext();
 
   const handleTheme = (e: Event) => {
@@ -17,7 +17,7 @@ export default function SwitchTheme() {
 
   return (
     <Link className="w-[1.2rem] h-100 -rotate-45" onClick={handleTheme}>
-      <SwitchThemeSvg />
+      <ThemeSwitcherSvg />
     </Link>
   );
 }
