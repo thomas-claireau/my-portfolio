@@ -9,7 +9,7 @@ en:
       url: /resume
 fr:
   items:
-    - title: À propos
+    - title: À propos test
       url: /about
     - title: Blog
       url: /blog
