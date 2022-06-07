@@ -26,9 +26,6 @@ module.exports = {
       transparent: 'transparent',
       inherit: 'inherit',
     },
-    borderColor: (theme) => ({
-      DEFAULT: theme('colors.gray.100', 'currentColor'),
-    }),
     animation: {
       cursor: 'cursor 1s ease-in-out infinite',
     },
