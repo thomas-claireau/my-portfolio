@@ -14,6 +14,13 @@ const nextConfig = {
       loader: 'frontmatter-markdown-loader',
       options: { mode: ['react-component'] },
     });
+
+    cfg.module.rules.push({
+      test: /\.svg$/i,
+      issuer: /\.[jt]sx?$/,
+      use: ['@svgr/webpack'],
+    });
+
     return cfg;
   },
 };

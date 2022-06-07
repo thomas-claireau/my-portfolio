@@ -7,3 +7,15 @@ html {
     Microsoft YaHei UI, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans,
     Droid Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
+.social-icon {
+  @apply fill-gray-300;
+}
+
+.social-icon > * {
+  @apply dark:!fill-gray-300 !fill-dark-800;
+}
+
+.social-icon:hover > * {
+  @apply dark:!fill-white !fill-blue;
+}

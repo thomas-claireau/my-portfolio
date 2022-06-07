@@ -24,7 +24,7 @@ export default function CursorAnimation({ letters }: Props) {
   }, [letters, randomTime]);
 
   return (
-    <div className="flex gap-1 items-center">
+    <div className="flex gap-1 items-center text-center">
       {items.map((item) => item)}
       <span className={`h-4/6 dark:bg-grey-300 bg-dark-800 ${isAnimate}`} />
     </div>
