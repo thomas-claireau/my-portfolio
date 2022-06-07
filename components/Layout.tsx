@@ -1,6 +1,7 @@
 import { useAppContext } from 'AppContext';
 import { useEffect } from 'react';
-import Header from './Header';
+import Footer from '@/components/Footer';
+import Header from '@/components/Header';
 
 export default function Layout({ children }) {
   const { state } = useAppContext();
@@ -17,11 +18,12 @@ export default function Layout({ children }) {
   }, [menuOpen]);
 
   return (
-    <div className="w-screen h-screen flex flex-col justify-center pt-24 dark:bg-dark-100 dark:text-gray-300 text-dark-800">
+    <div className="w-screen h-screen flex flex-col justify-between pt-24 dark:bg-dark-100 dark:text-gray-300 text-dark-800">
       <Header />
-      <div className={`${isBlur}`}>
+      <div className={`h-full ${isBlur}`}>
         {children}
       </div>
+      <Footer />
     </div>
   );
 }

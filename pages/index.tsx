@@ -1,4 +1,5 @@
 import CursorAnimation from '@/components/CursorAnimation';
+import Footer from '@/components/Footer';
 import SocialIcons from '@/components/SocialIcons';
 import { attributes } from '@/content/pages/home.md';
 import Image from 'next/image';

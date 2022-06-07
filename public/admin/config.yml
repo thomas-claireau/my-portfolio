@@ -68,5 +68,12 @@ collections:
             fields:
               - { name: title, label: "Titre", widget: "string", i18n: true }
               - { name: url, label: "URL", widget: "string", i18n: true }
+      - label: "Footer"
+        name: "footer"
+        file: "content/global/footer.md"
+        i18n: true
+        fields:
+          - { name: credit, label: Credit, widget: string, i18n: true }
+          - { name: copyright, label: Copyright, widget: string, i18n: true }
 publish_mode: editorial_workflow
 local_backend: true

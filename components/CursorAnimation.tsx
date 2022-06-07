@@ -9,8 +9,6 @@ export default function CursorAnimation({ letters }: Props) {
   const { state, setState } = useAppContext();
   const [items, setItems] = useState([]);
 
-  console.log(state);
-
   const randomTime = Math.floor(Math.random() * 50) + 50;
   const isAnimate = letters.length === items.length + 1 ? 'w-[0.1rem] animate-cursor' : 'w-[0.05rem]';
 
