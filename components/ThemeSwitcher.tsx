@@ -1,6 +1,6 @@
 import Link from '@/components/Link';
 import { useAppContext } from 'AppContext';
-import ThemeSwitcherSvg from './ui/ThemeSwitcherSvg';
+import ThemeSwitcherSvg from '@/components/ui/ThemeSwitcherSvg';
 
 type State = {
   theme: string;

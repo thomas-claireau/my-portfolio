@@ -1,8 +1,8 @@
 import Link from '@/components/Link';
 import { useAppContext } from 'AppContext';
 import { useRouter } from 'next/router';
-import FlagEnSvg from './ui/FlagEnSvg';
-import FlagFrSvg from './ui/FlagFrSvg';
+import FlagEnSvg from '@/components/ui/FlagEnSvg';
+import FlagFrSvg from '@/components/ui/FlagFrSvg';
 
 export default function LanguageSwitcher() {
   const { setState } = useAppContext();
