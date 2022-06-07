@@ -5,11 +5,12 @@ type Props = {
   href?: string;
   children: React.ReactNode;
   className?: string;
+  file: string;
   onClick?: (e: Event) => void;
 }
 
 export default function Link({
-  href = '#', children, className, onClick,
+  href = '#', children, file, className, onClick,
 }: Props) {
   const { setState } = useAppContext();
 
@@ -21,9 +22,19 @@ export default function Link({
     }
   };
 
+  const renderFileUrl = (fileUrl) => {
+    const url = fileUrl.replace('/public', '');
+
+    return url;
+  };
+
   return (
-    <NextLink href={href}>
-      <a className={`${className} text-lg dark:hover:text-white hover:text-blue`} onClick={handleClick} aria-hidden>{children}</a>
-    </NextLink>
+    file
+      ? <a href={renderFileUrl(file)} target="_blank" className={`${className} text-lg dark:hover:text-white hover:text-blue`} onClick={handleClick} aria-hidden rel="noreferrer">{children}</a> : (
+        <NextLink href={href}>
+          <a className={`${className} text-lg dark:hover:text-white hover:text-blue`} onClick={handleClick} aria-hidden>{children}</a>
+        </NextLink>
+      )
+
   );
 }

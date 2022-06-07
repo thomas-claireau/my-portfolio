@@ -67,7 +67,16 @@ collections:
             i18n: true
             fields:
               - { name: title, label: "Titre", widget: "string", i18n: true }
-              - { name: url, label: "URL", widget: "string", i18n: true }
+              - name: url
+                label: "URL"
+                widget: "string"
+                i18n: true
+                required: false
+              - label: "Fichiers ?"
+                name: "file"
+                widget: "file"
+                media_folder: /public
+                required: false
       - label: "Footer"
         name: "footer"
         file: "content/global/footer.md"

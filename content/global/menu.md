@@ -3,16 +3,13 @@ en:
   items:
     - title: About
       url: /about
-    - title: Blog
-      url: /blog
+      file: ""
     - title: Resume
-      url: /resume
+      file: /public/cv-claireau-thomas-2022.pdf
 fr:
   items:
     - title: À propos
       url: /about
-    - title: Blog
-      url: /blog
     - title: CV
-      url: /resume
+      file: /public/cv-claireau-thomas-2022.pdf
 ---
