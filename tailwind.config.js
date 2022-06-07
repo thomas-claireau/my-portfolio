@@ -24,10 +24,20 @@ module.exports = {
       blue: '#2d96bd',
       white: '#fff',
       transparent: 'transparent',
+      inherit: 'inherit',
     },
     borderColor: (theme) => ({
       DEFAULT: theme('colors.gray.100', 'currentColor'),
     }),
+    animation: {
+      cursor: 'cursor 1s ease-in-out infinite',
+    },
+    keyframes: {
+      cursor: {
+        '0%, 100%': { opacity: '0' },
+        '50%': { opacity: '1' },
+      },
+    },
   },
   plugins: [],
 };
