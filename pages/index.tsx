@@ -10,8 +10,6 @@ export default function Home() {
     title, description, socialNetwork, avatar,
   } = attributes[locale];
 
-  console.log(socialNetwork);
-
   return (
     <div className="h-full flex flex-col items-center justify-center gap-4">
       <Image className="rounded-full border" src={`/${avatar}`} width={128} height={128} objectFit="cover" />

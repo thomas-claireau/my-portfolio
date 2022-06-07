@@ -1,9 +1,12 @@
 import Link from '@/components/Link';
+import { useAppContext } from 'AppContext';
 import { useRouter } from 'next/router';
 import FlagEnSvg from './ui/FlagEnSvg';
 import FlagFrSvg from './ui/FlagFrSvg';
 
 export default function LanguageSwitcher() {
+  const { setState } = useAppContext();
+
   const router = useRouter();
   const {
     pathname, asPath, query, locale,
@@ -16,6 +19,7 @@ export default function LanguageSwitcher() {
 
     const nextLocale = locale === 'en' ? 'fr' : 'en';
 
+    setState((prevState) => ({ ...prevState, animateCursor: true }));
     router.push({ pathname, query }, asPath, { locale: nextLocale });
   };
 
