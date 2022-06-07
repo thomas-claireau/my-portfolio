@@ -4,12 +4,12 @@ import { useRouter } from 'next/router';
 
 export default function About() {
   const { locale } = useRouter();
-
-  console.log(attributes);
+  const { title, presentation } = attributes[locale];
 
   return (
     <Container>
-      About
+      <h1>{title}</h1>
+
     </Container>
   );
 }
