@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 type Icon = {
-  url: String,
-  title: String,
-  logo: String
+  url: string,
+  title: string,
+  logo: string
 }
 
 type Props = {
@@ -19,6 +19,7 @@ export default function SocialIcons({ icons }: Props) {
 
   const flagMap = reqSvgs.keys().reduce((images, path) => {
     const key = path.substring(path.lastIndexOf('/') + 1, path.lastIndexOf('.'));
+    // eslint-disable-next-line no-param-reassign
     images[key] = reqSvgs(path).default;
     return images;
   }, {});

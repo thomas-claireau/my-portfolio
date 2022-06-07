@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 type Props = {
-  letters: Array<String>
+  letters: Array<string>
 }
 
 export default function CursorAnimation({ letters }: Props) {
