@@ -2,7 +2,7 @@ import { unified } from 'unified';
 import parse from 'remark-parse';
 import remark2react from 'remark-react';
 import { createElement, useEffect, useState } from 'react';
-import markdownStyles from './style.module.css';
+import markdownStyles from './style.module.scss';
 import MarkdownLink from './MarkdownLink';
 
 export default function MarkdownPrint({ markdown }) {
