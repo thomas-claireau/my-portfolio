@@ -31,6 +31,6 @@
     "pages/_app.js",
     "pages/index.tsx",
     "AppContext.js"
-  ],
+, "components/markdown/MarkdownPrint.jsx"  ],
   "exclude": ["node_modules"]
 }
