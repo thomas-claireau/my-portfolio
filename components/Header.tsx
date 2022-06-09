@@ -16,7 +16,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed p-5 w-full top-0 dark:bg-dark-600 bg-gray-100 hover:shadow-[0_0_1.5rem_0_rgba(0,0,0,0.1)] transition-shadow ease-in-out duration-300 z-10">
+    <header className="fixed w-full top-0 dark:bg-dark-600 bg-gray-100 hover:shadow-[0_0_1.5rem_0_rgba(0,0,0,0.1)] transition-shadow ease-in-out duration-300 z-10">
       <Container className="flex justify-between gap-2">
         <Link href="/" className="font-bold !text-2xl">
           ~/portfolio

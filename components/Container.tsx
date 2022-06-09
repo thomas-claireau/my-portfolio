@@ -5,7 +5,7 @@ type Props = {
 
 export default function Container({ children, className }: Props) {
   return (
-    <div className={`md:container md:mx-auto ${className}`}>
+    <div className={`p-5 md:container md:mx-auto ${className}`}>
       {children}
     </div>
   );

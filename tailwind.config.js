@@ -10,6 +10,9 @@ module.exports = {
         mini: '375px',
       },
     },
+    container: {
+      center: true,
+    },
     colors: {
       dark: {
         100: '#292a2d',
@@ -22,6 +25,7 @@ module.exports = {
         300: '#a8a8b2',
       },
       blue: '#2d96bd',
+      pink: '#ef3982',
       white: '#fff',
       transparent: 'transparent',
       inherit: 'inherit',

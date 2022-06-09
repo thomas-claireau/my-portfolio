@@ -1,39 +1,36 @@
 .markdown {
   @apply text-base leading-relaxed text-left;
-}
 
-.markdown h3,
-.markdown h4,
-.markdown h5,
-.markdown h6 {
-  /* @apply font-lato; */
-}
+  h2 {
+    @apply text-3xl font-bold;
+  }
 
-.markdown h3 {
-  @apply text-2xl mb-6;
-}
+  h3 {
+    @apply text-2xl;
+  }
 
-.markdown p {
-  @apply my-4;
-}
+  p {
+    @apply my-4;
+  }
 
-.markdown ul,
-.markdown ol {
-  @apply my-6 ml-8;
-}
+  ul,
+  ol {
+    @apply my-6 ml-8;
+  }
 
-.markdown ul {
-  @apply list-disc;
-}
+  ul {
+    @apply list-disc;
+  }
 
-.markdown ol {
-  @apply list-decimal;
-}
+  ol {
+    @apply list-decimal;
+  }
 
-.markdown a {
-  @apply text-blue;
-}
+  a {
+    @apply text-blue hover:text-pink;
+  }
 
-.markdown :first-child {
-  @apply mt-0;
+  :first-child {
+    @apply mt-0;
+  }
 }
