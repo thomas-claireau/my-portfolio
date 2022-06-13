@@ -5,7 +5,7 @@ type Props = {
   href?: string;
   children: React.ReactNode;
   className?: string;
-  file: string;
+  file?: string;
   onClick?: (e: Event) => void;
 }
 

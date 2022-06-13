@@ -5,11 +5,10 @@ import { useRouter } from 'next/router';
 
 export default function About() {
   const { locale } = useRouter();
-  const { title, presentation } = attributes[locale];
+  const { presentation } = attributes[locale];
 
   return (
     <Container>
-      <h1>{title}</h1>
       <MarkdownPrint markdown={presentation} />
     </Container>
   );
