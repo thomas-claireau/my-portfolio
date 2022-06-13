@@ -13,14 +13,20 @@ function MyApp({ Component, pageProps }) {
 
   const langs = locales.filter((lang) => lang !== locale);
 
+  const isAdmin = router?.pathname === '/admin';
+
   return (
     <AppContextProvider>
-      <Head>
-        {langs.map((lang) => <link key={lang} rel="alternate" hrefLang={lang} href={`/${lang}`} />)}
-      </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      {!isAdmin ? (
+        <>
+          <Head>
+            {langs.map((lang) => <link key={lang} rel="alternate" hrefLang={lang} href={`/${lang}`} />)}
+          </Head>
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
+        </>
+      ) : <Component {...pageProps} />}
     </AppContextProvider>
   );
 }

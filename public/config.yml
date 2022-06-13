@@ -49,7 +49,7 @@ collections:
           - {
               label: "Presentation",
               name: "presentation",
-              widget: "markdown",
+              widget: "mdx",
               i18n: true,
             }
   - name: "global"
