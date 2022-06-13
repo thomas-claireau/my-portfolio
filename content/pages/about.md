@@ -17,22 +17,9 @@ fr:
     Intégré dans une équipe ou en solo, j’interviens principalement sur les tâches suivantes :
 
 
-    💻 Développement d'interfaces et d'applications web responsives (React.js, Vanilla JS, Sass)
+    - Développement d'interfaces et d'applications web responsives (React.js, Vanilla JS, Sass)
 
-    💻 Optimisation, maintenance et / ou refontes de sites existants
-
-
-    > Vous souhaitez travailler avec moi ?
-
-    >
-
-    > 🌟 Je saurais vous accompagner au mieux aussi bien en amont du projet (aide au cahier des charges, conseils) qu’après sa réalisation (optimisation, maintenance).
-
-    > 🌟 Je suis également à votre disposition si vous souhaitez un avis extérieur sur votre projet web.
-
-    >
-
-    > N’hésitez pas à me contacter directement pour parler de votre projet 👋
+    - Optimisation, maintenance et / ou refontes de sites existants
 
 
     ## Historique
@@ -44,7 +31,7 @@ fr:
     Début de l’aventure en freelance en 2020 💪
 
 
-    J’interviens en ce moment principalement sur du développement frontend en React.js / Next.js. 
+    J’interviens principalement sur du développement frontend en React.js / Next.js. 
 
 
     Voici quelques exemples de missions réalisées :
@@ -66,23 +53,21 @@ fr:
     Pour le compte de l'entreprise, je suis intervenu chez un client sur une application e-commerce :  
 
 
-    - Stack : Symfony 5 / React - Next.js
-
-     - Je suis intervenu sur la partie frontend
-
-     - Résolution de tickets en méthode agile - Intégration de pages reliées à l'API Symfony
+    * Stack : Symfony 5 / React - Next.js
+       - Je suis intervenu sur la partie frontend
+       - Résolution de tickets en méthode agile - Intégration de pages reliées à l'API Symfony
 
 
     #### 💻 Développeur web fullstack PHP Symfony / Vanilla JS @RoyalPunk  
 
 
-    - Chargé de la refonte d’une application dans le domaine RH
+    * Chargé de la refonte d’une application dans le domaine RH
 
-    - Intégration des pages en Vanilla JS + SCSS 
+    * Intégration des pages en Vanilla JS + SCSS 
 
-    - Développement de l’architecture en Symfony 5 
+    * Développement de l’architecture en Symfony 5 
 
-    - Montée de version Symfony de certains modules
+    * Montée de version Symfony de certains modules
 
 
     #### 💻 Développeur web Vanilla JS @FeelingGoodBakery  

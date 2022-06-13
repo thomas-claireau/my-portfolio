@@ -6,7 +6,7 @@ export default function Footer() {
   const { credit, copyright } = attributes[locale];
 
   return (
-    <footer className="pb-6 text-center text-sm">
+    <footer className="mt-8 pb-6 text-center text-sm">
       <p>{credit}</p>
       <p>{copyright}</p>
     </footer>

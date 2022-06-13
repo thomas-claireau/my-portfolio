@@ -31,7 +31,7 @@ export default function CursorAnimation({ letters }: Props) {
   }, [letters, randomTime]);
 
   return (
-    <div className="flex h-6 gap-1 items-center text-center">
+    <div className="flex h-6 gap-1 items-center text-center prose dark:prose-invert">
       {items.map((item) => item)}
       <span className={`h-4/6 dark:bg-grey-300 bg-dark-800 ${isAnimate}`} />
     </div>

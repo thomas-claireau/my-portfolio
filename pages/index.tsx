@@ -19,7 +19,7 @@ export default function Home() {
           <Image className="rounded-full" src={`/${avatar}`} width={128} height={128} objectFit="cover" />
         </div>
       </Link>
-      <h1 className="text-xl font-bold">{title}</h1>
+      <h1 className="text-xl lg:text-3xl font-bold">{title}</h1>
       <CursorAnimation letters={description.split('')} />
       <SocialIcons icons={socialNetwork} />
     </div>

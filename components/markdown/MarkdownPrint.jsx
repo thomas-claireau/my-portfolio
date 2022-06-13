@@ -19,5 +19,5 @@ export default function MarkdownPrint({ markdown }) {
       .processSync(markdown).result);
   }, [markdown]);
 
-  return <div className={markdownStyles.markdown}>{content}</div>;
+  return <div className="prose md:prose-lg lg:prose-lg dark:prose-invert m-auto">{content}</div>;
 }

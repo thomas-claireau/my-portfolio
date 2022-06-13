@@ -1,6 +1,10 @@
 .markdown {
   @apply text-base leading-relaxed text-left;
 
+  h1 {
+    @apply text-4xl font-bold;
+  }
+
   h2 {
     @apply text-3xl font-bold;
   }
@@ -32,5 +36,9 @@
 
   :first-child {
     @apply mt-0;
+  }
+
+  blockquote {
+    color: red;
   }
 }
