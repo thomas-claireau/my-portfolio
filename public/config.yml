@@ -45,11 +45,10 @@ collections:
         file: "content/pages/about.md"
         i18n: true
         fields:
-          - { label: "Title", name: "title", widget: "string", i18n: true }
           - {
               label: "Presentation",
               name: "presentation",
-              widget: "mdx",
+              widget: "markdown",
               i18n: true,
             }
   - name: "global"

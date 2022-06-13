@@ -13,7 +13,7 @@ export default function Home() {
   } = attributes[locale];
 
   return (
-    <div className="h-full flex flex-col items-center justify-center gap-4">
+    <div className="flex flex-col items-center justify-center gap-4">
       <Link href="/about" passHref>
         <div className="h-[128px] rounded-full shadow-[0_0_0_0.3618rem_rgba(0,0,0,0.05)] overflow-hidden cursor-pointer hover:-translate-y-3 transition-translate ease-in-out duration-[400ms]">
           <Image className="rounded-full" src={`/${avatar}`} width={128} height={128} objectFit="cover" />
