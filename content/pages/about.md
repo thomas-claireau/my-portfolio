@@ -17,9 +17,9 @@ fr:
     Intégré dans une équipe ou en solo, j’interviens principalement sur les tâches suivantes :
 
 
-    - Développement d'interfaces et d'applications web responsives (React.js, Vanilla JS, Sass)
+    * Développement d'interfaces et d'applications web responsives (React.js, Vanilla JS, Sass)
 
-    - Optimisation, maintenance et / ou refontes de sites existants
+    * Optimisation, maintenance et / ou refontes de sites existants
 
 
     ## Historique
